@@ -29,9 +29,9 @@ import (
 	"math/big"
 	"os"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/math"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/math"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

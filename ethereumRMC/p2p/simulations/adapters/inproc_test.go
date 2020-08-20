@@ -23,7 +23,7 @@ import (
 	"sync"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/simulations/pipes"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/simulations/pipes"
 )
 
 func TestTCPPipe(t *testing.T) {

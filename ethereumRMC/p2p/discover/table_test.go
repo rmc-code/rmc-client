@@ -27,10 +27,10 @@ import (
 	"testing/quick"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/netutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/netutil"
 )
 
 func TestTable_pingReplace(t *testing.T) {

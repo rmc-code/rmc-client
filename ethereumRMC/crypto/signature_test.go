@@ -22,9 +22,9 @@ import (
 	"reflect"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/math"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/math"
 )
 
 var (

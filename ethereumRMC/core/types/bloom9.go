@@ -20,8 +20,8 @@ import (
 	"fmt"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 type bytesBacked interface {

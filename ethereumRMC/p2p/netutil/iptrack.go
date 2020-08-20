@@ -19,7 +19,7 @@ package netutil
 import (
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
 )
 
 // IPTracker predicts the external endpoint, i.e. IP address and port, of the local host

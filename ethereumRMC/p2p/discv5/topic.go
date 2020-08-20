@@ -23,8 +23,8 @@ import (
 	"math/rand"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
 )
 
 const (

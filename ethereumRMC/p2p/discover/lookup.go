@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 // lookup performs a network search for nodes close to the given target. It approaches the

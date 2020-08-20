@@ -23,8 +23,8 @@ import (
 	"sort"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 func TestUDPv4_Lookup(t *testing.T) {

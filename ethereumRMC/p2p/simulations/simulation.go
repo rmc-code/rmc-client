@@ -20,7 +20,7 @@ import (
 	"context"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 // Simulation provides a framework for running actions in a simulated network

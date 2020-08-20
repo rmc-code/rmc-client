@@ -7,8 +7,8 @@ import (
 	"errors"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
 )
 
 var _ = (*receiptMarshaling)(nil)

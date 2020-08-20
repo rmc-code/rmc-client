@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 func TestNetwork_Lookup(t *testing.T) {

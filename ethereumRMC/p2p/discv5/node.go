@@ -30,8 +30,8 @@ import (
 	"strconv"
 	"strings"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 // Node represents a host on the network.

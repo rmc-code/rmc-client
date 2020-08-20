@@ -25,7 +25,7 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
 )
 
 var discard = Protocol{

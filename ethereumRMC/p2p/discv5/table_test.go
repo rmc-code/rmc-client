@@ -27,8 +27,8 @@ import (
 	"testing/quick"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 func TestBucket_bumpNoDuplicates(t *testing.T) {

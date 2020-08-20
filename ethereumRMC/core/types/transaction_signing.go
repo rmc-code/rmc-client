@@ -22,9 +22,9 @@ import (
 	"fmt"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/params"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/params"
 )
 
 var (

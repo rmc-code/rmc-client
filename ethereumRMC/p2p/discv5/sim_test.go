@@ -28,7 +28,7 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
 )
 
 // In this test, nodes try to randomly resolve each other.

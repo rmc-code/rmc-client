@@ -54,7 +54,7 @@ func TestBloom(t *testing.T) {
 import (
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/core/state"
+	"github.com/rmc-code/rmc-client/ethereumRMC/core/state"
 )
 
 func TestBloom9(t *testing.T) {

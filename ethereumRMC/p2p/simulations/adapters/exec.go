@@ -35,11 +35,11 @@ import (
 	"time"
 
 	"github.com/docker/docker/pkg/reexec"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/node"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rpc"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/node"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rpc"
 	"github.com/gorilla/websocket"
 )
 

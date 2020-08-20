@@ -24,12 +24,12 @@ import (
 	"fmt"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/core/types"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rpc"
+	"github.com/rmc-code/rmc-client/ethereumRMC"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rpc"
 )
 
 // Client defines typed wrappers for the Ethereum RPC API.

@@ -23,9 +23,9 @@ import (
 	"net"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/math"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/math"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 // node represents a host on the network.

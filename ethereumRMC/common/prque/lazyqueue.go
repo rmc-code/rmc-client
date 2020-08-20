@@ -20,7 +20,7 @@ import (
 	"container/heap"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
 )
 
 // LazyQueue is a priority queue data structure where priorities can change over

@@ -24,12 +24,12 @@ import (
 	"net"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/netutil"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/netutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

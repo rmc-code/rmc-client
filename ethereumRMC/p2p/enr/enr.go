@@ -40,7 +40,7 @@ import (
 	"io"
 	"sort"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 )
 
 const SizeLimit = 300 // maximum encoded size of a node record in bytes

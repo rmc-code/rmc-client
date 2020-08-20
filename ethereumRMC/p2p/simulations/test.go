@@ -19,10 +19,10 @@ package simulations
 import (
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rpc"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rpc"
 )
 
 // NoopService is the service that does not do anything

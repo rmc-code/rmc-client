@@ -24,8 +24,8 @@ import (
 	"testing"
 	"testing/quick"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 	"github.com/stretchr/testify/assert"
 )
 

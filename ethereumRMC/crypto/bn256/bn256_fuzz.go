@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"math/big"
 
-	cloudflare "git.weilaicaijing.com/RMCEth/ethereumRMC/crypto/bn256/cloudflare"
-	google "git.weilaicaijing.com/RMCEth/ethereumRMC/crypto/bn256/google"
+	cloudflare "github.com/rmc-code/rmc-client/ethereumRMC/crypto/bn256/cloudflare"
+	google "github.com/rmc-code/rmc-client/ethereumRMC/crypto/bn256/google"
 )
 
 // FuzzAdd fuzzez bn256 addition between the Google and Cloudflare libraries.

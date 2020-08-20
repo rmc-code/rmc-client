@@ -23,9 +23,9 @@ import (
 	"math/big"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

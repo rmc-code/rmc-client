@@ -25,7 +25,7 @@ import (
 	"net"
 	"sort"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
 )
 
 const (

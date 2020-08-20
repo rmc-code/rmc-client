@@ -25,7 +25,7 @@ import (
 	"sync"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
 	natpmp "github.com/jackpal/go-nat-pmp"
 )
 

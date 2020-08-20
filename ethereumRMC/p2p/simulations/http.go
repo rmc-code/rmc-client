@@ -29,11 +29,11 @@ import (
 	"strings"
 	"sync"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/event"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/simulations/adapters"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rpc"
+	"github.com/rmc-code/rmc-client/ethereumRMC/event"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/simulations/adapters"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rpc"
 	"github.com/gorilla/websocket"
 	"github.com/julienschmidt/httprouter"
 )

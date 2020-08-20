@@ -3,8 +3,8 @@ package main
 import (
     "context"
     "log"
-    "git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-    "git.weilaicaijing.com/RMCEth/ethereumRMC/ethclient"
+    "github.com/rmc-code/rmc-client/ethereumRMC/common"
+    "github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
     client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")

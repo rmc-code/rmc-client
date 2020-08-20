@@ -23,7 +23,7 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
 )
 
 func TestReadNodes(t *testing.T) {

@@ -21,8 +21,8 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
 )
 
 func TestTopicRadius(t *testing.T) {

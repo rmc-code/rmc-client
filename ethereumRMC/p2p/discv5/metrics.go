@@ -16,7 +16,7 @@
 
 package discv5
 
-import "git.weilaicaijing.com/RMCEth/ethereumRMC/metrics"
+import "github.com/rmc-code/rmc-client/ethereumRMC/metrics"
 
 var (
 	ingressTrafficMeter = metrics.NewRegisteredMeter("discv5/InboundTraffic", nil)

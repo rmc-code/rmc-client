@@ -32,10 +32,10 @@ import (
 	"time"
 
 	"github.com/davecgh/go-spew/spew"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto/ecies"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/simulations/pipes"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto/ecies"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/simulations/pipes"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 	"golang.org/x/crypto/sha3"
 )
 

@@ -22,8 +22,8 @@ import (
 	"errors"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/core/types"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
 )
 
 // NotFound is returned by API methods if the requested item does not exist.

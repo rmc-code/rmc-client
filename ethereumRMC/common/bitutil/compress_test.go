@@ -21,7 +21,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
 )
 
 // Tests that data bitset encoding and decoding works and is bijective.

@@ -20,9 +20,9 @@ import (
 	"crypto/ecdsa"
 	"net"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/netutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/netutil"
 )
 
 // UDPConn is a network connection on which discovery can operate.

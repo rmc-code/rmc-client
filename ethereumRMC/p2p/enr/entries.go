@@ -21,7 +21,7 @@ import (
 	"io"
 	"net"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
+	"github.com/rmc-code/rmc-client/ethereumRMC/rlp"
 )
 
 // Entry is implemented by known node record entry types.

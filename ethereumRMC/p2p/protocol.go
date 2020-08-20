@@ -19,8 +19,8 @@ package p2p
 import (
 	"fmt"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
 )
 
 // Protocol represents a P2P subprotocol implementation.

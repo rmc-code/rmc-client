@@ -42,7 +42,7 @@ import (
 	"fmt"
 	"hash"
 
-	ethcrypto "git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	ethcrypto "github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 var (

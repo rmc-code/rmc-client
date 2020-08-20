@@ -29,17 +29,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/event"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/discover"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/discv5"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/nat"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/netutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/event"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/discover"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/discv5"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/nat"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/netutil"
 )
 
 const (

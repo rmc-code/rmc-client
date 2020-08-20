@@ -27,10 +27,10 @@ import (
 	"testing"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/node"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/simulations/adapters"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/node"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/simulations/adapters"
 )
 
 // Tests that a created snapshot with a minimal service only contains the expected connections

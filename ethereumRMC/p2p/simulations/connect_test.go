@@ -19,9 +19,9 @@ package simulations
 import (
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/node"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/simulations/adapters"
+	"github.com/rmc-code/rmc-client/ethereumRMC/node"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/simulations/adapters"
 )
 
 func newTestNetwork(t *testing.T, nodeCount int) (*Network, []enode.ID) {

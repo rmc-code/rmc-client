@@ -20,7 +20,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
 )
 
 type MyType [5]byte

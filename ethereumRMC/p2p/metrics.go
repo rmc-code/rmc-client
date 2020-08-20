@@ -24,9 +24,9 @@ import (
 	"sync/atomic"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/event"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/metrics"
+	"github.com/rmc-code/rmc-client/ethereumRMC/event"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/metrics"
 )
 
 const (

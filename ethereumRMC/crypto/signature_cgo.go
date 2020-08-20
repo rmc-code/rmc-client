@@ -23,8 +23,8 @@ import (
 	"crypto/elliptic"
 	"fmt"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/math"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto/secp256k1"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/math"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto/secp256k1"
 )
 
 // Ecrecover returns the uncompressed public key that created the given signature.

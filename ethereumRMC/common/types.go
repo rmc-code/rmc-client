@@ -27,7 +27,7 @@ import (
 	"reflect"
 	"strings"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/hexutil"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
 	"golang.org/x/crypto/sha3"
 )
 

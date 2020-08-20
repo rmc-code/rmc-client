@@ -25,11 +25,11 @@ import (
 	"strings"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/log"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enr"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/log"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enr"
 	lru "github.com/hashicorp/golang-lru"
 )
 

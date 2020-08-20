@@ -20,7 +20,7 @@ import (
 	"errors"
 	"strings"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 var (

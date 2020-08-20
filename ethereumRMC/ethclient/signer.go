@@ -20,8 +20,8 @@ import (
 	"errors"
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/core/types"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
 )
 
 // senderFromServer is a types.Signer that remembers the sender address returned by the RPC

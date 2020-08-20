@@ -5,9 +5,9 @@ import (
 	"log"
 	// "math/big"
 	"encoding/hex"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/core/types"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/ethclient"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+	"github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
     client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")

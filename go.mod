@@ -1,10 +1,11 @@
-module git.weilaicaijing.com/RMCEth
+module github.com/rmc-code/rmc-client
 
 go 1.13
 
-replace git.weilaicaijing.com/RMCEth/ethereumRMC => ./ethereumRMC
+replace github.com/rmc-code/rmc-client/ethereumRMC => ./ethereumRMC
 
 require (
-	git.weilaicaijing.com/RMCEth/ethereumRMC v0.0.0-00010101000000-000000000000
+	github.com/rmc-code/rmc-client/ethereumRMC v1.9.15
 	google.golang.org/protobuf v1.25.0 // indirect
+	gopkg.in/natefinch/npipe.v2 v2.0.0-20160621034901-c1b8fa8bdcce // indirect
 )

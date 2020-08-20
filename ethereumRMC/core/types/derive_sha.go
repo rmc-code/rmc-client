@@ -19,9 +19,9 @@ package types
 import (
 	// "bytes"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
-	// "git.weilaicaijing.com/RMCEth/ethereumRMC/rlp"
-	// "git.weilaicaijing.com/RMCEth/ethereumRMC/trie"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
+	// "github.com/rmc-code/rmc-client/ethereumRMC/rlp"
+	// "github.com/rmc-code/rmc-client/ethereumRMC/trie"
 )
 
 type DerivableList interface {

@@ -39,7 +39,7 @@ import (
 	"math/big"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/crypto"
+	"github.com/rmc-code/rmc-client/ethereumRMC/crypto"
 )
 
 // Ensure the KDF generates appropriately sized keys.

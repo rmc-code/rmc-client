@@ -19,7 +19,7 @@ package params
 import (
 	"math/big"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
 )
 
 // DAOForkBlockExtra is the block header extra-data field to set for the DAO fork

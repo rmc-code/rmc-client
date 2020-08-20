@@ -22,8 +22,8 @@ import (
 	"math/rand"
 	"time"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common/mclock"
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/p2p/enode"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common/mclock"
+	"github.com/rmc-code/rmc-client/ethereumRMC/p2p/enode"
 )
 
 // clientTree is a full tree being synced.

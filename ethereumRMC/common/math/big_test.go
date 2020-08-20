@@ -22,7 +22,7 @@ import (
 	"math/big"
 	"testing"
 
-	"git.weilaicaijing.com/RMCEth/ethereumRMC/common"
+	"github.com/rmc-code/rmc-client/ethereumRMC/common"
 )
 
 func TestHexOrDecimal256(t *testing.T) {
