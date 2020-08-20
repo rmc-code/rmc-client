@@ -12,13 +12,13 @@ import (
     "github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
-    //连接节点
+    //Connect node
     client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
     if err != nil {
         log.Fatal(err)
     }
 
-//构造from地址
+//Construct fromAddress by privatekey
 //RMC30095Bb2A16CC8f4b897F511D2B62Fb8a0c2F0ec
     privateKey, err := crypto.HexToECDSA("b77de610fb69f929f9ce38e07bc003bb8dfffc9024c0af0da26ab2d0a052492e")
     if err != nil {
@@ -33,43 +33,43 @@ func main() {
     if err != nil {
         log.Fatal(err)
     }
-//设置to地址
+//Construct toAddress
 toAddress := common.HexToAddress("RMC6cBe9DF6DF54281D363e7a5e1790dc66212438C7")
 
         
-//设置value
+//value
     value,_:= new(big.Int).SetString("1",10)
-//设置gasPrice
+//gasPrice
     gasPrice, err := client.SuggestGasPrice(context.Background())
     if err != nil {
         log.Fatal(err)
     }
-//设置nonce
+//nonce
     nonce, err := client.PendingNonceAt(context.Background(), fromAddress)
-//设置data   
+//data   
     data:=[]byte("")
-//构造交易体
+//Construct transaction
     tx := types.NewTransaction(nonce, toAddress, value,3000000, big.NewInt(gasPrice.Int64()), data)
-//查询chainID
+//Inquire chainID
     chainID, err := client.NetworkID(context.Background())
     if err != nil {
         log.Fatal(err)
     }
-//交易签名
+//Sign transaction 
     var signedTx *types.Transaction
     signedTx, err = types.SignTx(tx, types.NewEIP155Signer(big.NewInt(chainID.Int64())), privateKey)
     if err != nil {
         log.Fatal(err)    
     }
-//发送签名数据  
-    err = client.SendTransaction(context.Background(), signedTx)
+//send signatureTx 
+    err = client.SendRawTransaction(context.Background(), signedTx)
     if err != nil {
         log.Fatal(err)
     }
 
     log.Printf("tx Hash: %v\n", signedTx.Hash().Hex())
     log.Println("Waiting for the transaction, about 4 minutes...")
-//等待交易
+//wait TX
 	for {
     tx, isPending, err := client.TransactionByHash(context.Background(), signedTx.Hash())
     if err != nil {

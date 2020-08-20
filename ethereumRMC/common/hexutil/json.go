@@ -41,7 +41,7 @@ type Bytes []byte
 func (b Bytes) MarshalText() ([]byte, error) {
 	if (len(b)==20){
 		result := make([]byte, len(b)*2+3)
-		copy(result, `GNC`)
+		copy(result, `RMC`)
 		hex.Encode(result[3:], b)
 		return result, nil
 	}else{

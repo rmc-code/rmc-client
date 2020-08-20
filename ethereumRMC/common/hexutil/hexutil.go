@@ -45,7 +45,7 @@ var (
 	ErrSyntax        = &decError{"invalid hex string"}
 	ErrMissingPrefix = &decError{"hex string without 0x prefix"}
 	//linzhaojie addressPrefix change code
-	ErrMissingAddressPrefix = &decError{"hex string without GNC prefix"}
+	ErrMissingAddressPrefix = &decError{"hex string without RMC prefix"}
 
 	ErrOddLength     = &decError{"hex string of odd length"}
 	ErrEmptyNumber   = &decError{"hex string \"0x\""}
@@ -108,7 +108,7 @@ func MustDecode(input string) []byte {
 func Encode(b []byte) string {
 	if (len(b)==20){
 	enc := make([]byte, len(b)*2+3)
-	copy(enc, "GNC")
+	copy(enc, "RMC")
 	hex.Encode(enc[3:], b)
 	return string(enc)
 	}

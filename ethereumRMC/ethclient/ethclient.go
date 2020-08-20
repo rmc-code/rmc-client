@@ -480,12 +480,13 @@ func (ec *Client) EstimateGas(ctx context.Context, msg ethereum.CallMsg) (uint64
 //
 // If the transaction was a contract creation use the TransactionReceipt method to get the
 // contract address after the transaction has been mined.
-func (ec *Client) SendTransaction(ctx context.Context, tx *types.Transaction) error {
-	data, err := rlp.EncodeToBytes(tx)
+func (ec *Client) SendTransaction(ctx context.Context, args types.SendTxArgs)(common.Hash, error) {
+    var hash common.Hash
+	err:=ec.c.CallContext(ctx, &hash, "eth_sendTransaction", args)
 	if err != nil {
-		return err
+		return common.Hash{}, err
 	}
-	return ec.c.CallContext(ctx, nil, "eth_sendRawTransaction", hexutil.Encode(data))
+	return hash,nil
 }
 
 func toCallArg(msg ethereum.CallMsg) interface{} {
@@ -508,8 +509,10 @@ func toCallArg(msg ethereum.CallMsg) interface{} {
 	return arg
 }
 
-func (ec *Client) SuperNodeAt(ctx context.Context, account common.Address, blockNumber string) (bool, error) {
-	var result bool
-	err := ec.c.CallContext(ctx, &result, "eth_isSuperNode", account, blockNumber)
-	return result, err
+func (ec *Client) SendRawTransaction(ctx context.Context, tx *types.Transaction) error {
+	data, err := rlp.EncodeToBytes(tx)
+	if err != nil {
+		return err
+	}
+	return ec.c.CallContext(ctx, nil, "eth_sendRawTransaction", hexutil.Encode(data))
 }

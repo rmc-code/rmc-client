@@ -38,7 +38,7 @@ const (
 	// AddressLength is the expected length of the address
 	AddressLength = 20
 	//linzhaojie addressPrefix change code
-	AddressPrefix="GNC"
+	AddressPrefix="RMC"
 )
 
 var (
@@ -229,7 +229,7 @@ func (a Address) Hex() string {
 			result[i] -= 32
 		}
 	}
-	return "GNC" + string(result)
+	return "RMC" + string(result)
 }
 
 // String implements fmt.Stringer.
@@ -346,10 +346,10 @@ func (ma *MixedcaseAddress) UnmarshalJSON(input []byte) error {
 // MarshalJSON marshals the original value
 //linzhaojie addressPrefix change code
 func (ma *MixedcaseAddress) MarshalJSON() ([]byte, error) {
-	if strings.HasPrefix(ma.original, "GNC") || strings.HasPrefix(ma.original, "GNC") {
-		return json.Marshal(fmt.Sprintf("GNC%s", ma.original[2:]))
+	if strings.HasPrefix(ma.original, "RMC") || strings.HasPrefix(ma.original, "RMC") {
+		return json.Marshal(fmt.Sprintf("RMC%s", ma.original[2:]))
 	}
-	return json.Marshal(fmt.Sprintf("GNC%s", ma.original))
+	return json.Marshal(fmt.Sprintf("RMC%s", ma.original))
 }
 
 // Address returns the address
