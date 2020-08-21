@@ -6,11 +6,11 @@ import (
     // "fmt"
     "log"
     "math/big"
-    "github.com/rmc-code/rmc-client/ethereumRMC/common"
-    "github.com/rmc-code/rmc-client/ethereumRMC/common/hexutil"
-    "github.com/rmc-code/rmc-client/ethereumRMC/core/types"
-    // "github.com/rmc-code/rmc-client/ethereumRMC/crypto"
-    "github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
+    "github.com/rmc-code/rmc-client/common"
+    "github.com/rmc-code/rmc-client/common/hexutil"
+    "github.com/rmc-code/rmc-client/core/types"
+    // "github.com/rmc-code/rmc-client/crypto"
+    "github.com/rmc-code/rmc-client/ethclient"
 )
 func main() {
 //Connect node

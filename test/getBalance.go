@@ -3,11 +3,11 @@ package main
 import (
     "context"
     "log"
-    "github.com/rmc-code/rmc-client/ethereumRMC/common"
-    "github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
+    "github.com/rmc-code/rmc-client/common"
+    "github.com/rmc-code/rmc-client/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://localhost:1234")
+    client, err := ethclient.Dial("http://192.168.1.127:8545")
     if err != nil {
         log.Fatal(err)
     }

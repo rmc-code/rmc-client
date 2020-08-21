@@ -5,9 +5,9 @@ import (
 	"log"
 	// "math/big"
 	"encoding/hex"
-	"github.com/rmc-code/rmc-client/ethereumRMC/common"
-	"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
-	"github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
+	"github.com/rmc-code/rmc-client/common"
+	"github.com/rmc-code/rmc-client/core/types"
+	"github.com/rmc-code/rmc-client/ethclient"
 )
 func main() {
     client, err := ethclient.Dial("http://localhost:1234")

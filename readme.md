@@ -53,7 +53,7 @@ Examples are in the test folder
 ```
 #### Construct transaction
 ```go
- //"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+ //"github.com/rmc-code/rmc-client/core/types"
     tx := types.NewTransaction(nonce, toAddress, amount.BigInt(),gas, gasPrice, data)
 ```
 #### Inquire chainID
@@ -66,7 +66,7 @@ Examples are in the test folder
 ```
 #### send signatureTx
 ```go
-//"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+//"github.com/rmc-code/rmc-client/core/types"
     err = client.SendRawTransaction(context.Background(), signedTx)
 ```
 ### Send transaction (unlock mode)
@@ -92,7 +92,7 @@ Examples are in the test folder
         Type:      0,
     }
     //send transaction
-//"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+//"github.com/rmc-code/rmc-client/core/types"
         hash,err:=client.SendTransaction(context.Background(),tx)
         if err != nil {
             log.Fatal(err)
