@@ -10,13 +10,13 @@ import (
 	"github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
+    client, err := ethclient.Dial("http://localhost:8545")
     if err != nil {
         log.Fatal(err)
 	}
 	var transaction *types.Transaction
 	
-	TransactionHash := common.HexToHash("0xa7ab5a9d119afb4e3e2a97c627e6bd31b1232db6055a77e0f28dab97bfec7af1")
+	TransactionHash := common.HexToHash("0x05813c1580e2ba4f6d54264d82b204677b222b7a4da006eba30d2be65d572f51")
 	transaction,isPending,err:=client.TransactionByHash(context.Background(),TransactionHash)
 	if err != nil {
         log.Fatal(err)

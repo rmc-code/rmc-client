@@ -87,7 +87,7 @@ func has0xPrefix(str string) bool {
 }
 // linzhaojie addressPrefix change code
 func haswl_Prefix(str string) bool {
-	return len(str) >= 3 && (str[0] == 'G' ||str[0] == 'g')&& (str[1] == 'N'||str[1]=='n')&&(str[2] == 'C'||str[2]=='c')
+	return len(str) >= 3 && (str[0] == 'R' ||str[0] == 'r')&& (str[1] == 'M'||str[1]=='m')&&(str[2] == 'C'||str[2]=='c')
 }
 
 // isHexCharacter returns bool of c being a valid hexadecimal.

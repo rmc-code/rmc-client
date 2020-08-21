@@ -220,7 +220,7 @@ func has0xPrefix(input string) bool {
 }
 // linzhaojie addressPrefix change code
 func haswl_Prefix(input string) bool {
-	return len(input) >= 2 && (input[0] == 'G'||input[0]=='g') && (input[1] == 'N'||input[1]=='n')&&(input[2] == 'C'||input[2]=='c')
+	return len(input) >= 2 && (input[0] == 'R'||input[0]=='r') && (input[1] == 'M'||input[1]=='m')&&(input[2] == 'C'||input[2]=='c')
 }
 
 func checkNumber(input string) (raw string, err error) {

@@ -13,14 +13,16 @@ import (
 )
 func main() {
     //Connect node
-    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
+    client, err := ethclient.Dial("http://192.168.1.127:8545")
     if err != nil {
         log.Fatal(err)
     }
 
 //Construct fromAddress by privatekey
 //RMC30095Bb2A16CC8f4b897F511D2B62Fb8a0c2F0ec
-    privateKey, err := crypto.HexToECDSA("b77de610fb69f929f9ce38e07bc003bb8dfffc9024c0af0da26ab2d0a052492e")
+    // privateKey, err := crypto.HexToECDSA("b77de610fb69f929f9ce38e07bc003bb8dfffc9024c0af0da26ab2d0a052492e")
+//0x0108aE381335Bba1F5a3293D501947D6174de367
+    privateKey, err := crypto.HexToECDSA("6ab0638768979e4a551a2c81b90c943cb12e07819bee721be74aaf481919bb2b")
     if err != nil {
         log.Fatal(err)
     }
@@ -30,11 +32,12 @@ func main() {
         log.Fatal("cannot assert type: publicKey is not of type *ecdsa.PublicKey")
     }
     fromAddress := crypto.PubkeyToAddress(*publicKeyECDSA)
+    fmt.Println(fromAddress.Hex())
     if err != nil {
         log.Fatal(err)
     }
 //Construct toAddress
-toAddress := common.HexToAddress("RMC6cBe9DF6DF54281D363e7a5e1790dc66212438C7")
+toAddress := common.HexToAddress("30095Bb2A16CC8f4b897F511D2B62Fb8a0c2F0ec")
 
         
 //value
@@ -49,7 +52,7 @@ toAddress := common.HexToAddress("RMC6cBe9DF6DF54281D363e7a5e1790dc66212438C7")
 //data   
     data:=[]byte("")
 //Construct transaction
-    tx := types.NewTransaction(nonce, toAddress, value,3000000, big.NewInt(gasPrice.Int64()), data)
+    tx := types.NewTransaction(nonce, toAddress, value,21000, big.NewInt(gasPrice.Int64()), data)
 //Inquire chainID
     chainID, err := client.NetworkID(context.Background())
     if err != nil {
