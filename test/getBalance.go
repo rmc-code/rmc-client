@@ -7,7 +7,7 @@ import (
     "github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
+    client, err := ethclient.Dial("http://localhost:1234")
     if err != nil {
         log.Fatal(err)
     }

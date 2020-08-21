@@ -10,7 +10,7 @@ import (
 	"github.com/rmc-code/rmc-client/ethereumRMC/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://localhost:8545")
+    client, err := ethclient.Dial("http://localhost:1234")
     if err != nil {
         log.Fatal(err)
 	}

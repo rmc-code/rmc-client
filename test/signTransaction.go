@@ -6,6 +6,9 @@ import (
     "fmt"
     "log"
     "math/big"
+    // "strconv"
+    "math"
+    "github.com/shopspring/decimal"
     "github.com/rmc-code/rmc-client/ethereumRMC/common"
     "github.com/rmc-code/rmc-client/ethereumRMC/core/types"
     "github.com/rmc-code/rmc-client/ethereumRMC/crypto"
@@ -41,18 +44,23 @@ toAddress := common.HexToAddress("30095Bb2A16CC8f4b897F511D2B62Fb8a0c2F0ec")
 
         
 //value
-    value,_:= new(big.Int).SetString("1",10)
+value := decimal.NewFromFloat(0.1)//this is value you want to send
+
+decimals := decimal.NewFromFloat(math.Pow10(18))
+amount:=value.Mul(decimals)//Authentic value 
+    
 //gasPrice
     gasPrice, err := client.SuggestGasPrice(context.Background())
     if err != nil {
         log.Fatal(err)
     }
+    gas:=uint64(21000)
 //nonce
     nonce, err := client.PendingNonceAt(context.Background(), fromAddress)
 //data   
     data:=[]byte("")
 //Construct transaction
-    tx := types.NewTransaction(nonce, toAddress, value,21000, big.NewInt(gasPrice.Int64()), data)
+    tx := types.NewTransaction(nonce, toAddress, amount.BigInt(),gas, gasPrice, data)
 //Inquire chainID
     chainID, err := client.NetworkID(context.Background())
     if err != nil {

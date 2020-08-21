@@ -7,7 +7,7 @@ Examples are in the test folder
 ### Connect node
 
 ```go
-    client, err := ethclient.Dial("http://chain-node.galaxynetwork.vip")
+    client, err := ethclient.Dial("http://localhost:1234")
 ```
 ### Send transaction (signature mode)
 
@@ -29,10 +29,32 @@ Examples are in the test folder
 ```go
    toAddress := common.HexToAddress("RMC6cBe9DF6DF54281D363e7a5e1790dc66212438C7")
 ```
+#### set value
+```go
+    value := decimal.NewFromFloat(0.1)//this is value you want to send
 
+    decimals := decimal.NewFromFloat(math.Pow10(18))
+    amount:=value.Mul(decimals)//Authentic value 
+```
+#### set gasPrice and gaslimit
+```go 
+//gasPrice
+    gasPrice, err := client.SuggestGasPrice(context.Background())
+    if err != nil {
+        log.Fatal(err)
+    }
+//gaslimit
+    gas:=uint64(21000)
+```
+#### set nonce 
+```go
+//nonce
+    nonce, err := client.PendingNonceAt(context.Background(), fromAddress)
+```
 #### Construct transaction
 ```go
-    tx := types.NewTransaction(nonce, toAddress, value,gas, gasPrice, data)
+ //"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
+    tx := types.NewTransaction(nonce, toAddress, amount.BigInt(),gas, gasPrice, data)
 ```
 #### Inquire chainID
 ```go
@@ -44,6 +66,7 @@ Examples are in the test folder
 ```
 #### send signatureTx
 ```go
+//"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
     err = client.SendRawTransaction(context.Background(), signedTx)
 ```
 ### Send transaction (unlock mode)
@@ -69,6 +92,7 @@ Examples are in the test folder
         Type:      0,
     }
     //send transaction
+//"github.com/rmc-code/rmc-client/ethereumRMC/core/types"
         hash,err:=client.SendTransaction(context.Background(),tx)
         if err != nil {
             log.Fatal(err)

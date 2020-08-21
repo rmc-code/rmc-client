@@ -14,7 +14,7 @@ import (
 )
 func main() {
 //Connect node
-    client, err := ethclient.Dial("http://47.112.224.137:8547")
+    client, err := ethclient.Dial("http://localhost:1234")
     if err != nil {
         log.Fatal(err)
 	}
