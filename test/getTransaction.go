@@ -21,7 +21,6 @@ func main() {
 	if err != nil {
         log.Fatal(err)
 	}
-
 	if isPending==false{
     chainID, err := client.NetworkID(context.Background())
     if err != nil {
@@ -42,4 +41,4 @@ func main() {
 	log.Println("Nonce:",transaction.Nonce())             
 	log.Println("Data:",hex.EncodeToString(transaction.Data()))
 }
-}
+} 

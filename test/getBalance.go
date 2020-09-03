@@ -7,17 +7,16 @@ import (
     "github.com/rmc-code/rmc-client/ethclient"
 )
 func main() {
-    client, err := ethclient.Dial("http://192.168.1.127:8545")
+    client, err := ethclient.Dial("http://120.79.174.236:8545")
     if err != nil {
         log.Fatal(err)
     }
 
-	Address := common.HexToAddress("RMC86056D210eA7Bc23337aCaBE96dE275E584a67ce")
+	Address := common.HexToAddress("0xf948a50e7Deae42c81e205CE73220a28bEDa71d7")
 
 	balance,err:=client.BalanceAt(context.Background(),Address,nil)
 	if err != nil {
         log.Fatal(err)
-	}
+    }
     log.Println("balance===>",balance)
-
 }
